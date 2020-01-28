@@ -37,5 +37,5 @@ end
 
 def add_s(arr)
   # add "s" to end of each word except second element in array
-  
+  arr.each_with_index.each {|element, index| element.insert(-1, "s") if index != 1}
 end
